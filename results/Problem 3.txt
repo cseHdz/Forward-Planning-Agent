@@ -1,0 +1,105 @@
+
+Solving Air Cargo Problem 3 using uniform_cost_search...
+
+# Actions   Expansions   Goal Tests   New Nodes
+    88        18510       18512       161936
+
+Plan length: 12  Time elapsed in seconds: 13.200677201000019
+Load(C2, P2, JFK)
+Fly(P2, JFK, ATL)
+Load(C3, P2, ATL)
+Fly(P2, ATL, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Load(C1, P2, SFO)
+Unload(C4, P2, SFO)
+Unload(C2, P2, SFO)
+Fly(P2, SFO, JFK)
+Unload(C3, P2, JFK)
+Unload(C1, P2, JFK)
+
+
+Solving Air Cargo Problem 3 using greedy_best_first_graph_search with h_unmet_goals...
+
+# Actions   Expansions   Goal Tests   New Nodes
+    88          25          27         230
+
+Plan length: 15  Time elapsed in seconds: 0.03213714499997877
+Load(C1, P1, SFO)
+Load(C2, P2, JFK)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P2, SFO, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Unload(C4, P2, SFO)
+Fly(P2, SFO, ATL)
+Load(C3, P2, ATL)
+Fly(P2, ATL, JFK)
+Unload(C3, P2, JFK)
+Fly(P2, JFK, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+
+
+Solving Air Cargo Problem 3 using greedy_best_first_graph_search with h_pg_levelsum...
+
+# Actions   Expansions   Goal Tests   New Nodes
+    88          14          16         126
+
+Plan length: 14  Time elapsed in seconds: 6.25139192900042
+Load(C1, P1, SFO)
+Fly(P1, SFO, ORD)
+Load(C2, P2, JFK)
+Fly(P2, JFK, SFO)
+Unload(C2, P2, SFO)
+Fly(P2, SFO, ATL)
+Load(C3, P2, ATL)
+Fly(P2, ATL, JFK)
+Unload(C3, P2, JFK)
+Load(C4, P1, ORD)
+Fly(P1, ORD, SFO)
+Unload(C4, P1, SFO)
+Fly(P1, SFO, JFK)
+Unload(C1, P1, JFK)
+
+
+Solving Air Cargo Problem 3 using astar_search with h_pg_levelsum...
+
+# Actions   Expansions   Goal Tests   New Nodes
+    88         369         371         3403
+
+Plan length: 12  Time elapsed in seconds: 133.52718206999998
+Load(C1, P1, SFO)
+Fly(P1, SFO, ATL)
+Load(C3, P1, ATL)
+Fly(P1, ATL, JFK)
+Load(C2, P2, JFK)
+Fly(P2, JFK, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Unload(C4, P2, SFO)
+Unload(C3, P1, JFK)
+Unload(C2, P2, SFO)
+Unload(C1, P1, JFK)
+
+
+Solving Air Cargo Problem 3 using astar_search with h_pg_maxlevel...
+
+# Actions   Expansions   Goal Tests   New Nodes
+    88         9580        9582       86312
+
+Plan length: 12  Time elapsed in seconds: 2403.088335327
+Load(C2, P2, JFK)
+Fly(P2, JFK, ATL)
+Load(C3, P2, ATL)
+Fly(P2, ATL, ORD)
+Load(C4, P2, ORD)
+Fly(P2, ORD, SFO)
+Load(C1, P2, SFO)
+Unload(C4, P2, SFO)
+Unload(C2, P2, SFO)
+Fly(P2, SFO, JFK)
+Unload(C3, P2, JFK)
+Unload(C1, P2, JFK)
+
