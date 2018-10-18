@@ -73,5 +73,5 @@ Use your results to answer the following questions:
 
 ## Evaluation
 
-Your project will be reviewed by a Udacity reviewer against the project rubric [here](https://review.udacity.com/#!/rubrics/1800/view). Review this rubric thoroughly, and self-evaluate your project before submission. All criteria found in the rubric must meet specifications for you to pass.
+The project rubric can be found [here](https://review.udacity.com/#!/rubrics/1800/view). 
 
